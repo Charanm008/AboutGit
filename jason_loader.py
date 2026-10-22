@@ -10,3 +10,7 @@ date = {
 
 with open('data.json', 'w', newline='') as f:
     json.dump(date, f)
+
+with open('data.json', 'r', newline='') as f:
+    data = json.load(f)
+    print(data)
